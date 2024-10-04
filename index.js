@@ -5,7 +5,7 @@ require('dotenv').config();
 
 // Configurar SendGrid API Key
 
-sendgrid.setApiKey(sendGridApiKey);
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 const app = express();
 app.use(cors());
